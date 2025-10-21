@@ -3,3 +3,28 @@ size = input("What size pizza do you want? S, M or L: ")
 pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
 extra_cheese = input("Do you want extra cheese? Y or N: ")
 
+small = 15
+medium = 20
+large = 25
+pepperoni_small = 2
+pepperoni_medlarge = 3
+add_cheese = 1
+bill = 0
+
+if size == "S":
+    bill = small
+elif size == "M":
+    bill = medium
+elif size == "L":
+    bill = large
+
+if pepperoni == "Y":
+    if size == "S":
+        bill += pepperoni_small
+    else:
+        bill += pepperoni_medlarge
+
+if extra_cheese == "Y":
+    bill += add_cheese
+
+print(f"You need to pay ${bill} dollars!")

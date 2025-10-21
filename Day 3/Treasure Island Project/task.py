@@ -15,10 +15,26 @@ print(r'''
 ____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
 /______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
 ____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
-/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+/______/______/______/_oo_____/____"=._o._; | ;_.--"o.--"_/______/______/______/_
 ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/_____ /
 *******************************************************************************
 ''')
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
+choise_1 = input("Please select your way R or L")
+
+if choise_1 == "R":
+    print("Fall into a hole Game Over")
+if choise_1 == "L":
+    print("You passed")
+    choise_2 = input("S or W")
+    if choise_2 == "S":
+        print("Attacked by trout game over.")
+    if choise_2 == "W":
+        print("You Passed.")
+        door = input("R Y B")
+        if door == "R" or door == "B":
+            print("Game over")
+        else:
+            print("You win.")
