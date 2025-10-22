@@ -27,4 +27,4 @@ if pepperoni == "Y":
 if extra_cheese == "Y":
     bill += add_cheese
 
-print(f"You need to pay ${bill} dollars!")
+print(f"Your final bill is: ${bill}.")
