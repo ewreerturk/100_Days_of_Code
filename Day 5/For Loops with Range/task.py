@@ -1,7 +1,7 @@
 #
 #
 # x= 0
-# for number in range(1,101):
+# for number in range(1,101): = for number in range (1, 100 + 1)
 #     x += number
 #
 # print(x)
@@ -16,3 +16,15 @@
 #         print("Buzz")
 #     else:
 #         print(number)
+
+array = ["apple", "apple12", "apple123"]
+
+# for x in range(0,10):
+#     array.append(x)
+#   #  print(array)
+
+# print(array)
+for z in range(len(array)):
+    emre = [(array[z])]
+
+    print(emre)
